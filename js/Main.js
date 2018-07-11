@@ -1,16 +1,13 @@
 import { ResourceLoader } from './base/ResourceLoader.js';
 import { Director } from './Director.js';
-import { Sprite } from './base/Sprite.js';
 import { BackGround } from './runtime/BackGround.js';
 import { DataStore } from './base/DataStore.js';
 import { Land } from './runtime/Land.js';
-import { PencilUp } from './runtime/PencilUp.js';
-import { PencilDown } from './runtime/PencilDown.js';
 export class Main {
     constructor() {
         this.canvas = wx.createCanvas();
         this.context = this.canvas.getContext('2d');
-        
+
         this.dataStore = DataStore.getInstance();
 
         const resouceLoader = ResourceLoader.create();
