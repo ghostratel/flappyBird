@@ -7,8 +7,6 @@ export class Director {
         this.dataStore = DataStore.getInstance();
 
         this.backGroundSprite = this.dataStore.get('background');
-        console.log(this.dataStore.get('background'))
-        console.log('执行了')
         this.landSprite = this.dataStore.get('land');
         this.moveSpeed = 2;
     }
