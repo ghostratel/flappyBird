@@ -1,7 +1,7 @@
 import { DataStore } from './base/DataStore.js';
 import { PencilUp } from './runtime/PencilUp.js';
 import { PencilDown } from './runtime/PencilDown.js';
-import { Audio } from './base/AudioPlayer.js'
+import { Audio } from './base/Audio.js'
 // 单例模式  导演类 控制游戏逻辑
 export class Director {
     constructor() {

@@ -6,7 +6,7 @@ import { Land } from './runtime/Land.js';
 import { Birds } from './player/Birds.js';
 import { StartButton } from './player/StartButton.js';
 import { Score } from './player/Score.js';
-import { Audio } from './base/AudioPlayer.js'
+import { Audio } from './base/Audio.js'
 export class Main {
     constructor() {
         this.canvas = wx.createCanvas();
