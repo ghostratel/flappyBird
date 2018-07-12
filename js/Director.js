@@ -132,23 +132,17 @@ export class Director {
             score.canScore = false;
             score.score++;
 
+            // 震动
+            wx.vibrateShort();
+
             // 得分音效
             const getScore = new Audio('audio/score.mp3');
             getScore.play();
+
         }
     }
 
     static isStroke(bird, pencil) {
-        // let result = false;
-        // if (
-        //     bird.top >= pencil.bottom ||
-        //     (bird.bottom - 6) <= pencil.top ||
-        //     (bird.right - 10) <= pencil.left ||
-        //     bird.left >= pencil.right
-        // ) {
-        //     result = true;
-        // }
-        // return !result;
         let result = false;
         // 上铅笔 60 和 17 是为了适配铅笔尖三角形形状设置的常量参数，可以自行修改
         if (pencil.top <= 0) {
