@@ -10,18 +10,23 @@ export class DataStore {
 
     constructor() {
         this.dataMap = new Map();
+        this.windowWidth = wx.getSystemInfoSync().windowWidth;
+        this.windowHeight = wx.getSystemInfoSync().windowHeight;
     }
 
     set(key, value) {
-        this.dataMap.set(key, value)
-        return this
+        this.dataMap.set(key, value);
+        return this;
     }
 
-    get(key){
-        return this.dataMap.get(key)
+    get(key) {
+        return this.dataMap.get(key);
     }
 
-    destory(){
-        this.dataMap.clear()
+    destory() {
+        // for (let value of this.dataMap.values()) {
+        //     value = null;
+        // }
+        this.dataMap.clear();
     }
 }

@@ -1,5 +1,6 @@
 import { Sprite } from '../base/Sprite.js';
 import { Director } from '../Director.js';
+import { DataStore } from '../base/DataStore.js';
 /// 铅笔基类
 export class Pencil extends Sprite {
     constructor(image, top) {
@@ -9,7 +10,7 @@ export class Pencil extends Sprite {
             srcY: 0,
             srcW: image.width,
             srcH: image.height,
-            x: wx.getSystemInfoSync().windowWidth,
+            x: DataStore.getInstance().windowWidth,
             y: 0,
             width: image.width,
             height: image.height

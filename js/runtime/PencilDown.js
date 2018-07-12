@@ -1,14 +1,15 @@
 import { Pencil } from './Pencil.js';
 import { Sprite } from '../base/Sprite.js';
+import { DataStore } from '../base/DataStore.js';
 
 export class PencilDown extends Pencil {
     constructor(top) {
         const image = Sprite.getImage('pencil_down');
         super(image, top);
+        this.gap = DataStore.getInstance().windowHeight / 5;
     }
     draw() {
-        const gap = wx.getSystemInfoSync().windowHeight / 5;
-        this.y = this.top + gap;
+        this.y = this.top + this.gap;
         super.draw();
     }
 }

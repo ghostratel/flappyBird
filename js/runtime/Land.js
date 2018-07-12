@@ -1,6 +1,7 @@
 // 陆地类
 import { Sprite } from '../base/Sprite.js';
 import { Director } from '../Director.js';
+import { DataStore } from '../base/DataStore.js';
 const loopWidth = 137; // 陆地图片循环宽度
 export class Land extends Sprite {
     constructor() {
@@ -25,11 +26,11 @@ export class Land extends Sprite {
         this.landX += this.landSpeed;
         if (
             this.landX >
-            this.image.width - wx.getSystemInfoSync().windowWidth
+            this.image.width - DataStore.getInstance().windowWidth
         ) {
             this.landX =
                 loopWidth -
-                (wx.getSystemInfoSync().windowWidth - Director.getInstance().moveSpeed * loopWidth) -
+                (DataStore.getInstance().windowWidth - Director.getInstance().moveSpeed * loopWidth) -
                 10;
         }
         super.draw({

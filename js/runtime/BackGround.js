@@ -1,4 +1,5 @@
 import { Sprite } from '../base/Sprite.js';
+import { DataStore } from '../base/DataStore.js';
 
 export class BackGround extends Sprite {
     constructor() {
@@ -11,8 +12,8 @@ export class BackGround extends Sprite {
             srcH: image.height,
             x: 0,
             y: 0,
-            width: wx.getSystemInfoSync().windowWidth,
-            height: wx.getSystemInfoSync().windowHeight
+            width: DataStore.getInstance().windowWidth,
+            height: DataStore.getInstance().windowHeight
         });
     }
 }
