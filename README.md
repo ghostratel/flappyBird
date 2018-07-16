@@ -8,7 +8,7 @@
 
 PC预览时请使用移动端调试模式。
 
-* 1.`npm install`  安装依赖
+* 1. `npm install`  安装依赖
 
-* 2.`npm run start`  预览
+* 2. `npm run start`  预览
 
