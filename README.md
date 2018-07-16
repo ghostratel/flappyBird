@@ -6,9 +6,12 @@
 
 ## /web   web版。
 
-[在线预览](https://ghostratel.github.io/portfolio/FlappyBird)
+[项目演示地址](https://ghostratel.github.io/portfolio/FlappyBird)    
 
-扫码体验: ![](http://ww1.sinaimg.cn/large/e3507465gy1ftbrymabctj207s07st8h.jpg)
+移动端体验更佳     
+
+![二维码](http://ww1.sinaimg.cn/large/e3507465gy1ftbrymabctj207s07st8h.jpg)
+
 
 PC预览时请使用移动端调试模式。
 
