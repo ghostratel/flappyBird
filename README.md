@@ -8,7 +8,7 @@
 
 [在线预览](https://ghostratel.github.io/portfolio/FlappyBird)
 
-扫码体验: !(http://ww1.sinaimg.cn/large/e3507465gy1ftbrymabctj207s07st8h.jpg)
+扫码体验: ![](http://ww1.sinaimg.cn/large/e3507465gy1ftbrymabctj207s07st8h.jpg)
 
 PC预览时请使用移动端调试模式。
 
