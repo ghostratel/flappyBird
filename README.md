@@ -6,7 +6,7 @@
 
 ## /web   web版。
 
-![在线预览](https://ghostratel.github.io/portfolio/FlappyBird)
+[在线预览](https://ghostratel.github.io/portfolio/FlappyBird)
 
 ![扫码体验](http://ww1.sinaimg.cn/large/e3507465gy1ftbrymabctj207s07st8h.jpg)
 
