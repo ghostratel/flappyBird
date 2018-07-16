@@ -6,6 +6,8 @@
 
 ## /web   web版。
 
+![在线预览](http://ww1.sinaimg.cn/large/e3507465gy1ftbrymabctj207s07st8h.jpg)
+
 PC预览时请使用移动端调试模式。
 
   + 1.` npm install `  安装依赖
