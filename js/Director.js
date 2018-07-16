@@ -1,7 +1,7 @@
 import { DataStore } from './base/DataStore.js';
 import { PencilUp } from './runtime/PencilUp.js';
 import { PencilDown } from './runtime/PencilDown.js';
-import { Audio } from './base/Audio.js'
+import { Audio } from './base/Audio.js';
 // 单例模式  导演类 控制游戏逻辑
 export class Director {
     constructor() {
@@ -60,8 +60,8 @@ export class Director {
             this.dataStore.set('timer', timer);
         } else {
             // 死亡音效
-            const gameOver = new Audio('audio/gameOver.mp3')
-            gameOver.play()
+            const gameOver = new Audio('audio/gameOver.mp3');
+            gameOver.play();
 
             this.dataStore.get('start_button').draw();
             const timer = this.dataStore.get('timer');
@@ -86,6 +86,8 @@ export class Director {
                 'birds'
             ).birdsY[i];
         }
+        let fly = new Audio('audio/fly.mp3');
+        fly.play();
         this.dataStore.get('birds').time = 0;
     }
 
@@ -128,7 +130,9 @@ export class Director {
 
         //加分逻辑
         if (
-            birdsSprite.birdsX[0] > pencils[0].x + pencils[0].width && score.canScore) {
+            birdsSprite.birdsX[0] > pencils[0].x + pencils[0].width &&
+            score.canScore
+        ) {
             score.canScore = false;
             score.score++;
 
@@ -138,7 +142,6 @@ export class Director {
             // 得分音效
             const getScore = new Audio('audio/score.mp3');
             getScore.play();
-
         }
     }
 
